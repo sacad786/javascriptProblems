@@ -19,13 +19,7 @@
 // console.log(volumeOfBox(2,2,2))
 
 function volumeOfBox(width,length,height) {
-    let volume = {
-        width: width,
-        length: length,
-        height: height,
-      };
-
-      return volume.width * volume.length * volume.height
+   return width * length * height
 }
 
 

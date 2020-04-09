@@ -11,7 +11,14 @@
 // Notes
 // How can you express the input parameter so it takes a variable number of arguments?
 
-function numberArgs(total,total) {
-}
 
-console.log(numberArgs("a","b"))
+
+function sumParam(p1, p2, p3) {
+    let sum = 0;
+    for(i=0; i<arguments.length; i++){
+        sum += arguments[i] 
+    }
+     console.log(sum)
+ }
+ 
+ sumParam(1,2,5)

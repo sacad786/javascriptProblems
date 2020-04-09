@@ -8,32 +8,27 @@
 
 // getMultipliedArr([5, 382, 0]) ➞ [10, 764, 0]
 
-// function getMultipliedArr(arr){
-//   for (i=0;i<arr.length;i++){
-//      const elementMultiplied = arr[i]*2
-//      arr[i] = elementMultiplied
-//   }
-//   return arr
-// }
-
-// console.log(getMultipliedArr([1,86,-5]))
 
 
-// // function getMultipliedArr(arr){
-//   for (i=0;i<arr.length;i++){
-//     const multiplied = arr[i] * 2
-//     arr[i] = multiplied
-//   }
-//   return arr
-// // }
+function getMultipliedArr(arr){
 
-// go through the array 
-// get each item 
-// multiply by 2 
-// save that item to the array in the same position
-function getMultipliedArr(){
-  const saccad = [1,2,3,4,5]
-  return saccad[]*2
+for (i=0;i<arr.length;i++){
+ const multiplied = arr[i] * 2
+ arr[i] = multiplied
+}
+console.log(arr)
+
 }
 
-console.log(getMultipliedArr())
+getMultipliedArr([1, 2, 3])
+
+// go through the arra
+// acces the item in hte index /loop
+// mulitply that item byy 2, and save it in tempVar
+// save that temppVar in  the array at the same index
+
+
+
+
+
+

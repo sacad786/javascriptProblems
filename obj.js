@@ -21,12 +21,7 @@
 // }) ➞ "Tokyo has a population of 13,929,286 and is situated in Asia"
 
 function cityFacts(name,population,continent) {
-    let sacad = {
-        name: name,
-        population: population,
-        continent: continent
-    }
-    return `"${sacad.name} has a population of ${sacad.population} and is situated in ${sacad.continent}"`
+    return `"${name} has a population of ${population}, and is situated in ${continent}"`
 }
 
-console.log(cityFacts("RSA","2","africa"))
+console.log(cityFacts("rsa",7,"africa"))
