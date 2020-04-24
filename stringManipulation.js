@@ -39,10 +39,7 @@ console.log(comp("s","ss"))
 // split by , or ; or space
 str.replace(//g, "") */
 
-let str = 'hello'
-let strArr = str.split("e");
-console.log(str);
-console.log(strArr);
+
 
 
 

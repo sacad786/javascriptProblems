@@ -4,14 +4,14 @@
     "reportVersion": 1,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200405.152216.15184.0.001.json",
-    "dumpEventTime": "2020-04-05T15:22:16Z",
-    "dumpEventTimeStamp": "1586092936727",
-    "processId": 15184,
+    "filename": "report.20200424.112346.2612.0.001.json",
+    "dumpEventTime": "2020-04-24T11:23:46Z",
+    "dumpEventTimeStamp": "1587720226793",
+    "processId": 2612,
     "cwd": "C:\\Users\\owner\\Documents\\dev-group\\javascriptProblems",
     "commandLine": [
       "C:\\Program Files\\nodejs\\node.exe",
-      "multiplyArray.js"
+      "prac.js"
     ],
     "nodejsVersion": "v12.16.1",
     "wordSize": 64,
@@ -50,38 +50,38 @@
       {
         "model": "Intel(R) Core(TM) i7-4600M CPU @ 2.90GHz",
         "speed": 2893,
-        "user": 11387687,
+        "user": 15432781,
         "nice": 0,
-        "sys": 10380046,
-        "idle": 69877250,
-        "irq": 1091500
+        "sys": 18085890,
+        "idle": 156405796,
+        "irq": 3138593
       },
       {
         "model": "Intel(R) Core(TM) i7-4600M CPU @ 2.90GHz",
         "speed": 2893,
-        "user": 11019406,
+        "user": 12759875,
         "nice": 0,
-        "sys": 8634718,
-        "idle": 71990796,
-        "irq": 203656
+        "sys": 10706093,
+        "idle": 166458406,
+        "irq": 178265
       },
       {
         "model": "Intel(R) Core(TM) i7-4600M CPU @ 2.90GHz",
         "speed": 2893,
-        "user": 12861703,
+        "user": 16638359,
         "nice": 0,
-        "sys": 9513734,
-        "idle": 69269484,
-        "irq": 125562
+        "sys": 12756328,
+        "idle": 160529671,
+        "irq": 176250
       },
       {
         "model": "Intel(R) Core(TM) i7-4600M CPU @ 2.90GHz",
         "speed": 2893,
-        "user": 11115093,
+        "user": 13611453,
         "nice": 0,
-        "sys": 8640015,
-        "idle": 71889812,
-        "irq": 87468
+        "sys": 12672468,
+        "idle": 163640453,
+        "irq": 139062
       }
     ],
     "networkInterfaces": [
@@ -130,59 +130,63 @@
   },
   "nativeStack": [
     {
-      "pc": "0x00007ff647d619f9",
+      "pc": "0x00007ff6dfb919f9",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
     },
     {
-      "pc": "0x00007ff647d65e1c",
+      "pc": "0x00007ff6dfb95e1c",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
     },
     {
-      "pc": "0x00007ff647d64dd8",
+      "pc": "0x00007ff6dfb94dd8",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
     },
     {
-      "pc": "0x00007ff647e634cb",
+      "pc": "0x00007ff6dfc934cb",
       "symbol": "v8::base::CPU::has_sse+38363"
     },
     {
-      "pc": "0x00007ff648679f4e",
+      "pc": "0x00007ff6e04a9f4e",
       "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
     },
     {
-      "pc": "0x00007ff648662021",
+      "pc": "0x00007ff6e0492021",
       "symbol": "v8::SharedArrayBuffer::Externalize+833"
     },
     {
-      "pc": "0x00007ff64852e57c",
+      "pc": "0x00007ff6e035e57c",
       "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
     },
     {
-      "pc": "0x00007ff64854b632",
-      "symbol": "v8::internal::Factory::NewFixedDoubleArray+98"
+      "pc": "0x00007ff6e037b47b",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+59"
     },
     {
-      "pc": "0x00007ff648427ccf",
-      "symbol": "v8::debug::Script::GetIsolate+6303"
+      "pc": "0x00007ff6e037b431",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray+65"
     },
     {
-      "pc": "0x00007ff6482d824a",
+      "pc": "0x00007ff6e02581ff",
+      "symbol": "v8::debug::Script::GetIsolate+7631"
+    },
+    {
+      "pc": "0x00007ff6e010824a",
       "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+162938"
     },
     {
-      "pc": "0x00007ff648ac4ddd",
+      "pc": "0x00007ff6e08f4ddd",
       "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
     },
     {
-      "pc": "0x000000fa560441d9",
+      "pc": "0x00000060b2184397",
       "symbol": ""
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2754502656,
-    "totalCommittedMemory": 2754502656,
-    "usedMemory": 2719830304,
-    "availableMemory": 16759296,
+    "totalMemory": 2214928384,
+    "totalCommittedMemory": 2214928384,
+    "usedMemory": 2180132648,
+    "availableMemory": 17205504,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -200,31 +204,31 @@
         "available": 16759296
       },
       "old_space": {
-        "memorySize": 1720320,
-        "committedMemory": 1720320,
-        "capacity": 1264176,
-        "used": 1264176,
-        "available": 0
+        "memorySize": 2244608,
+        "committedMemory": 2244608,
+        "capacity": 2071136,
+        "used": 1624928,
+        "available": 446208
       },
       "code_space": {
         "memorySize": 430080,
         "committedMemory": 430080,
-        "capacity": 155520,
-        "used": 155520,
+        "capacity": 161472,
+        "used": 161472,
         "available": 0
       },
       "map_space": {
         "memorySize": 266240,
         "committedMemory": 266240,
-        "capacity": 170480,
-        "used": 170480,
+        "capacity": 243280,
+        "used": 243280,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 1674735616,
-        "committedMemory": 1674735616,
-        "capacity": 1674722936,
-        "used": 1674722936,
+        "memorySize": 1451630592,
+        "committedMemory": 1451630592,
+        "capacity": 1451579280,
+        "used": 1451579280,
         "available": 0
       },
       "code_large_object_space": {
@@ -235,21 +239,21 @@
         "available": 0
       },
       "new_large_object_space": {
-        "memorySize": 1043484672,
-        "committedMemory": 1043484672,
-        "capacity": 1043481600,
-        "used": 1043481600,
+        "memorySize": 726491136,
+        "committedMemory": 726491136,
+        "capacity": 726488096,
+        "used": 726488096,
         "available": 0
       }
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 1.109,
-    "kernelCpuSeconds": 0.906,
-    "cpuConsumptionPercent": 201.5,
-    "maxRss": 2766794752,
+    "userCpuSeconds": 3.421,
+    "kernelCpuSeconds": 0.859,
+    "cpuConsumptionPercent": 107,
+    "maxRss": 2226827264,
     "pageFaults": {
-      "IORequired": 778547,
+      "IORequired": 545950,
       "IONotRequired": 0
     },
     "fsActivity": {
@@ -300,7 +304,7 @@
     "USERPROFILE": "C:\\Users\\owner",
     "windir": "C:\\WINDOWS",
     "TERM_PROGRAM": "vscode",
-    "TERM_PROGRAM_VERSION": "1.43.2",
+    "TERM_PROGRAM_VERSION": "1.44.2",
     "LANG": "en_US.UTF-8",
     "COLORTERM": "truecolor"
   },

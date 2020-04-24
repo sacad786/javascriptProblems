@@ -12,19 +12,7 @@ Notes
 If the input tries to divide by 0, return: "Can't divide by 0!"*/
 
 function calculator(str) {
-    switch (str) {
-        case "+":
-        answer:"add"
-        break;
-        case "-":
-        answer:"minus"
-        break;
-        case "*":
-        answer:"multiply"
-        break;
-        case "/":
-        answer:"divide"
-        break;
 
-    }
+    
+    
 }

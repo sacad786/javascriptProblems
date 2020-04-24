@@ -30,21 +30,9 @@ function catchZeroDivision(str) {
             let operator = checkOperator(restArr[i])
                 console.log("sum: ", sum);
                 
-                if(operator == "+"){
+                let number =  restArr[i+1]
+                sum = calculate(sum, operator, number)
                 
-                    sum = sum + Number(restArr[i+1])
-                    console.log( " now adding: "+  restArr[i+1] + " after op: sum is : "+ sum);
-
-                    
-                }else if(operator == "-"){
-                    sum = sum - Number(restArr[i+1])
-                    console.log(" now subtracting: " +  restArr[i+1] + " after op: sum is : "+ sum);
-
-                }else if(operator == "*"){
-                    sum = sum * Number(restArr[i+1])
-                }else if(operator == "/"){
-                    sum = sum / Number(restArr[i+1])
-                }
             }
         }
         return (sum === 0)
@@ -84,4 +72,24 @@ function checkOperator(operator) {
     }else{
         return "undefinedOperator"
     }
+}
+
+function calculate(sum, operator, number) {
+    if(operator == "+"){
+                
+        sum = sum + Number(number)
+        console.log( " now adding: "+  number + " after op: sum is : "+ sum);
+
+        
+    }else if(operator == "-"){
+        sum = sum - Number(number)
+        console.log(" now subtracting: " +  number + " after op: sum is : "+ sum);
+
+    }else if(operator == "*"){
+        sum = sum * Number(number)
+    }else if(operator == "/"){
+        sum = sum / Number(number)
+    }
+
+    return sum;
 }
